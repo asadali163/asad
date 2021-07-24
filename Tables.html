@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Demo</title>
+
+    <style>
+        table{
+            border-collapse:collapse;
+            border: 2px solid black;
+            
+            border-spacing: 10px;
+        
+        
+        }
+        th,td{
+            padding: 10px;
+            border:1px solid black;
+            
+        }
+        #t02{
+            background-color: rgb(221, 162, 162);
+            border-width: 100%;
+        }
+        #t02 tr:nth-child(even){
+            background-color: white;
+        }
+        #t02 tr:nth-child(odd){
+            background-color:wheat;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- The above border spacing only works if the border collapse is not in the collapse mode-->
+    <table>
+        <caption>Table of HTML</caption>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>OGDCL</td>
+                <td>Near Behria Town Karachi</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td>Tesco</td>
+                <td>Washington D.C</td>
+                <td>United States</td>
+            </tr>
+            <tr >
+                <td>Apple</td>
+                <td colspan="2" style="text-align: center;"><b>China</b></td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            
+        </tfoot>
+    </table>
+    <hr size="3px" color="red">
+    <table id="t02">
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td>Asad</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone Numbers</th>
+                <td>03169812675</td>
+            </tr>
+            <tr>
+                <td>03302463163</td>
+            </tr>
+        </tbody>
+    </table> 
+    <hr size="3px">
+
+    <table style="border: none">
+        <tbody>
+            <tr>
+                <th>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>JAVA</td>
+                                <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
+                            </tr>
+                            <tr>
+                                <td>C++</td>
+                                <td>&#11088;&#11088;&#11088;</td>
+                            </tr>
+                            <tr>
+                                <td>HTML 5</td>
+                                <td>&#11088;&#11088;&#11088;&#11088;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </th>
+                
+                <th>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>JAVA</td>
+                                <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
+                            </tr>
+                            <tr>
+                                <td>C++</td>
+                                <td>&#11088;&#11088;&#11088;</td>
+                            </tr>
+                            <tr>
+                                <td>HTML 5</td>
+                                <td>&#11088;&#11088;&#11088;&#11088;</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 
+    <table>
+        <thead>
+            <th>Skill</th>
+            <th>Expertise</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JAVA</td>
+                <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>&#11088;&#11088;&#11088;</td>
+            </tr>
+            <tr>
+                <td>HTML 5</td>
+                <td>&#11088;&#11088;&#11088;&#11088;</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+    -->
+
+</body>
+</html>
